@@ -1,0 +1,7 @@
+{
+  "version": "v1",
+  "provenance": "synthetic malformed EBU Tech 3264 block image",
+  "size": 1152,
+  "fills": [{ "start": 0, "end": 1152, "byte": 0 }],
+  "writes": [{ "offset": 0, "ascii": "850BAD25.01000" }]
+}

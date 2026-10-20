@@ -1,0 +1,19 @@
+{
+  "version": "v1",
+  "provenance": "synthetic",
+  "consent": "repository-authored test data",
+  "formats": {
+    "srt": {
+      "valid": "srt/valid.srt",
+      "malformed": "srt/malformed.srt",
+      "roundTrip": "srt/expected.srt",
+      "expectedCueIds": ["cue-10", "cue-20"]
+    },
+    "vtt": {
+      "valid": "vtt/valid.vtt",
+      "malformed": "vtt/malformed.vtt",
+      "roundTrip": "vtt/expected.vtt",
+      "expectedCueIds": ["cue-1", "cue-2"]
+    }
+  }
+}

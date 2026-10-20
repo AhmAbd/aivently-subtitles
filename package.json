@@ -1,0 +1,56 @@
+{
+  "name": "aivently-subtitles",
+  "version": "0.1.0",
+  "description": "Parse, validate, convert, shift, check, merge and export subtitle files (SRT, WebVTT, ASS/SSA, SBV, MicroDVD SUB, TTML, SAMI, LRC, MPL2, TMP, CSV, SCC, EBU-STL). Zero dependencies, runs in the browser and Node.",
+  "keywords": [
+    "subtitles",
+    "srt",
+    "vtt",
+    "webvtt",
+    "ass",
+    "ssa",
+    "ttml",
+    "sami",
+    "captions",
+    "subtitle-converter",
+    "srt-parser",
+    "dual-subtitles"
+  ],
+  "homepage": "https://aivently.com/en/tools/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmAbd/aivently-subtitles.git"
+  },
+  "bugs": "https://github.com/AhmAbd/aivently-subtitles/issues",
+  "license": "MIT",
+  "author": "Aivently (https://aivently.com)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10"
+  }
+}

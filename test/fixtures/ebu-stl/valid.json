@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "provenance": "synthetic EBU Tech 3264 block image",
+  "size": 1280,
+  "fills": [
+    { "start": 0, "end": 1024, "byte": 32 },
+    { "start": 1024, "end": 1280, "byte": 143 }
+  ],
+  "writes": [
+    { "offset": 0, "ascii": "850STL25.01000" },
+    { "offset": 1024, "hex": "000001ff000000000000000106140200" },
+    { "offset": 1040, "hex": "48656c6c6f8a776f726c648f" },
+    { "offset": 1152, "hex": "000002ff000000020000000300140200" },
+    { "offset": 1168, "hex": "4279658f" }
+  ]
+}
